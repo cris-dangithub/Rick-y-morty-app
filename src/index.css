@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Nerko One', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0f2e33;
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+button {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004f;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.flexItemsCentered,
+.flexItemsAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexItemsCentered {
+  justify-content: center;
+}
+
+.flexItemsAround {
+  justify-content: space-around;
+}

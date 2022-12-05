@@ -1,0 +1,27 @@
+.content__info-location {
+  background-color: #0f2e33c4;
+  border: 1px #a9d3a5 solid;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #faebd7;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.location__title {
+  align-self: center;
+  font-weight: 400;
+  text-align: center;
+}
+.location__list {
+  align-self: center;
+}
+
+
+.list__title-location {
+  font-size: 0.9rem;
+}
