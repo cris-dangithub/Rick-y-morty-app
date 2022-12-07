@@ -5,7 +5,7 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #faebd7;
-  height: 10rem;
+  min-height: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -19,9 +19,15 @@
 }
 .location__list {
   align-self: center;
+  display: grid;
+  gap: 0.6rem;
 }
 
 
 .list__title-location {
   font-size: 0.9rem;
+}
+
+.location__list-li {
+  line-height: 14px;
 }

@@ -5,14 +5,25 @@
   gap: 1rem;
 }
 
-.App__header {
-  position: relative;
-  height: 100vh;
+.backgrounds {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   -webkit-animation: backgroundChange 120s ease infinite;
   animation: backgroundChange 120s ease infinite;
+}
+
+.App__header {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+
   padding: 1rem 1rem;
 }
 
@@ -65,7 +76,7 @@
   font-size: 3rem;
   -webkit-animation: arrows ease 2s infinite;
   animation: arrows ease 2s infinite;
-  color: #347a85;
+  color: #00afc7;
   text-shadow: 0px 0px 5px #95ff8b;
 
 }
