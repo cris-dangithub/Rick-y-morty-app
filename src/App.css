@@ -5,7 +5,9 @@
   gap: 1rem;
 }
 
-.backgrounds {
+/* 
+!ESTO NO FUNCIONA EN iPhone
+.backgrounds { -> 
   position: fixed;
   top: 0;
   right: 0;
@@ -13,10 +15,47 @@
   bottom: 0;
   z-index: -1;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   -webkit-animation: backgroundChange 120s ease infinite;
   animation: backgroundChange 120s ease infinite;
+}
+!!!
+*/
+.backgrounds {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  /* background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: backgroundChange 120s ease infinite;
+  animation: backgroundChange 120s ease infinite; */
+}
+
+.backgrounds:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  animation: backgroundChange 120s ease infinite;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .App__header {
