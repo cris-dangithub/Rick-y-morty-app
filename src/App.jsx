@@ -5,11 +5,9 @@ import ResidentCard from './components/ResidentCard';
 import useFetch from './hooks/useFetch'
 
 function App() {
-
   let { ubication, handleSubmit } = useFetch()
-
   return (
-    <div className="App">
+    <div className="App" id="particles-js">
       <header className='App__header flexItemsCentered'>
         <div className="overlay"></div>
         <section className="App__header-content flexItemsAround">
